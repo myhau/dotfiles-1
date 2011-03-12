@@ -1,0 +1,20 @@
+### Aliases
+
+alias -r t="~/Documents/Dropbox/Library/Shell/todo.txt-cli/todo.sh"
+alias -r g="google"
+alias -r git="hub"
+alias -r scpresume="rsync --partial --progress --rsh=ssh"
+alias -r sshxeon="ssh paul@xeon.local"
+
+### Functions
+
+function ssht {
+	ssh -t $1 'tmux attach'
+}
+function pman {
+	man -t "$1" > /tmp/"$1".ps; open /tmp/"$1".ps;
+}
+
+function gcal_today() {
+	g calendar today title --cal ".*" | sed -E "/^$/d" | sed -E "/\[(.*)\]/d" | sed -E "s/^(.*)/(E) \1/g"
+}

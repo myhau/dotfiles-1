@@ -1,0 +1,17 @@
+[core]
+	editor = vim
+[user]
+	name = Paul Connolley
+	email = shunuk@gmail.com
+[alias]
+	ci = commit
+	co = checkout
+	cl = clone
+	br = branch
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	ui = !/usr/bin/gity
+	discard = checkout --
+[github]
+	user = connrs
+	token = e1af4c8ab2e751d3931adfcb45691d54

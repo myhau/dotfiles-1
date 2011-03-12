@@ -1,0 +1,4 @@
+gem: --no-ri --no-rdoc
+gempath:
+  - /usr/local/lib/ruby/gems/1.8
+  - /Users/shunuk/.gem
