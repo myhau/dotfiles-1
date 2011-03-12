@@ -1,6 +1,7 @@
 syntax on
-colorscheme molokai 
-colors molokai
+colorscheme navajo
+colors navajo
+set background=light
 set autoindent
 set cmdheight=2
 set ruler
@@ -51,3 +52,5 @@ nnoremap k gk
 inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR>
+
+hi CursorLine cterm=NONE ctermbg=white ctermfg=black guibg=white guifg=black
