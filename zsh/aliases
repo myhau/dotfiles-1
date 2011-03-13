@@ -2,7 +2,9 @@
 
 alias -r t="~/Documents/Dropbox/Library/Shell/todo.txt-cli/todo.sh"
 alias -r g="google"
-alias -r git="hub"
+if [[ -f "/usr/local/bin/hub" ]]; then
+	alias -r git="hub"
+fi
 alias -r scpresume="rsync --partial --progress --rsh=ssh"
 alias -r sshxeon="ssh paul@xeon.local"
 
