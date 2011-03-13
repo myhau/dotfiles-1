@@ -18,3 +18,9 @@ function pman {
 function gcal_today() {
 	g calendar today title --cal ".*" | sed -E "/^$/d" | sed -E "/\[(.*)\]/d" | sed -E "s/^(.*)/(E) \1/g"
 }
+
+function initFakeDisplay() {
+	if [[ -z $DISPLAY && ! -a /tmp/.X11-unix/X0 && $(id -u) != 0 ]]; then
+		startx -- /usr/bin/Xvfb :2 -screen 0 1024x768x24 &
+	fi
+}
