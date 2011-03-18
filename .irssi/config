@@ -277,12 +277,12 @@ statusbar = {
   };
 };
 settings = {
-  core = { real_name = "Paul"; user_name = "paul"; nick = "connrs"; };
+  core = { real_name = "Paul Connolley"; user_name = "paul"; nick = "connrs"; };
   "fe-text" = { actlist_sort = "refnum"; paste_verify_line_count = "0"; };
-  "fe-common/core" = { theme = "cyanic"; show_nickmode_empty = "no"; };
+  "fe-common/core" = { theme = "dma147"; show_nickmode_empty = "no"; };
   "perl/core/scripts" = { crapbuster_levels = "JOINS PARTS QUITS"; };
 };
 ignores = (
   { mask = "help"; level = "ALL"; },
-  { level = "JOINS PARTS QUITS NICKS"; channels = ( "#jquery" ); }
+  { level = "JOINS PARTS QUITS NICKS"; channels = ( "#jquery", "#documentcloud", "#whatwg", "#html5" ); }
 );
