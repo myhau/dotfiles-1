@@ -10,6 +10,7 @@ set tabstop=2
 set guioptions-=T
 set encoding=UTF-8 fileencodings=.
 set nocompatible
+set mouse=a
 set cursorline
 set ttyfast
 set ruler
