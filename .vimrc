@@ -54,4 +54,4 @@ inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR>
 
-hi CursorLine cterm=NONE ctermbg=white ctermfg=black guibg=white guifg=black
+hi CursorLine cterm=NONE ctermbg=white ctermfg=NONE guibg=white guifg=NONE
