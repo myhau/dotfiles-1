@@ -1,6 +1,8 @@
 syntax on
+set t_Co=256
 colorscheme navajo
 colors navajo
+set mouse=a
 set background=light
 set autoindent
 set cmdheight=2
@@ -10,7 +12,6 @@ set tabstop=2
 set guioptions-=T
 set encoding=UTF-8 fileencodings=.
 set nocompatible
-set mouse=a
 set cursorline
 set ttyfast
 set ruler
@@ -37,7 +38,7 @@ nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
 set list
-set listchars=tab:▸\ ,eol:¬
+"set listchars=tab:▸\ ,eol:¬
 
 nnoremap <up> <nop>
 nnoremap <down> <nop>
