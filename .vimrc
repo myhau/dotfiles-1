@@ -10,6 +10,7 @@ set ruler
 set nu
 set tabstop=2
 set guioptions-=T
+let &termencoding=&encoding
 set encoding=UTF-8 fileencodings=.
 set nocompatible
 set cursorline
@@ -39,6 +40,7 @@ nnoremap <tab> %
 vnoremap <tab> %
 set list
 "set listchars=tab:▸\ ,eol:¬
+set listchars=tab:»·,eol:¶
 
 nnoremap <up> <nop>
 nnoremap <down> <nop>

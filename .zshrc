@@ -27,6 +27,6 @@ export TODOTXT_DEFAULT_ACTION=ls
 
 export EDITOR=vim
 
-export PATH=/usr/local/bin:$PATH:/usr/local/sbin:/usr/libexec:/usr/bin:/Applications:/Developer/usr/bin:/Users/shunuk/Documents/Dropbox/Projects/src/todo
+export PATH=/usr/local/bin:$PATH:/usr/local/sbin:/sbin:/usr/libexec:/usr/bin:/Applications:/Developer/usr/bin:/Users/shunuk/Documents/Dropbox/Projects/src/todo
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
