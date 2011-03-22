@@ -1,10 +1,9 @@
-#!/usr/local/bin/zsh
-if [[ $SSH_LOGIN == "yes" ]]; then
+if [[ "$SSH_CONNECTION" != "yes" && "$MY_SSH_CONNECTION" != "yes" ]]; then
 	while true; do
 		echo -n "Do you want to attach to a tmux session? [y/n] "
 		read yn
 		case $yn in
-			[Yy]* ) export SSH_LOGIN="no"; tmux attach; break;;
+			[Yy]* ) MY_SSH_CONNECTION="yes" tmux attach; break;;
 			[Nn]* ) exit;;
 			* ) echo "Please answer y/n (Yes or no.)";;
 		esac
