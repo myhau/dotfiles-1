@@ -58,3 +58,25 @@ nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR>
 
 hi CursorLine cterm=NONE ctermbg=white ctermfg=NONE guibg=white guifg=NONE
+
+nmap<silent> <F1> :call NumberToggle()<CR>
+
+function! NumberToggle()
+	if exists("&rnu")
+		if&number
+			setlocal relativenumber
+		else
+			if&relativenumber
+				setlocal norelativenumber
+			else
+				setlocal number
+			endif
+		endif
+	else
+		if&number
+			setlocal nonumber
+		else
+			setlocal number
+		endif
+	endif
+endfunction
