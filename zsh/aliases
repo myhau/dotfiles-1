@@ -8,6 +8,7 @@ fi
 alias -r scpresume="rsync --partial --progress --rsh=ssh"
 alias -r sshxeon="ssh paul@xeon.local"
 alias -r svim="vim --servername d --remote-silent"
+alias -g tmuxinit="-t \". /etc/profile; tmux attach\""
 
 ### Functions
 
