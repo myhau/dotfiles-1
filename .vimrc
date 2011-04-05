@@ -1,14 +1,21 @@
 syntax on
+
+filetype on
+filetype plugin on
+filetype indent on
+
+set tabstop=4 softtabstop=4 shiftwidth=4
+
 set t_Co=256
 colorscheme navajo
 colors navajo
-set mouse=a
 set background=light
+
+set mouse=a
 set autoindent
 set cmdheight=2
 set ruler
 set nu
-set tabstop=2
 set guioptions-=T
 let &termencoding=&encoding
 set encoding=UTF-8 fileencodings=.
@@ -35,13 +42,13 @@ set gdefault
 set incsearch
 set showmatch
 set hlsearch
+
 nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
 set list
-"set listchars=tab:▸\ ,eol:¬
-set listchars=tab:»·,eol:¶
-
+set listchars=tab:»\ ,eol:¶
+		
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
