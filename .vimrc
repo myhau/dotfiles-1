@@ -27,7 +27,6 @@ if has("multi_byte")
 	setglobal fileencoding=utf-8
 	set fileencodings=ucs-bom,utf-8,latin1
 endif
-endif
 "let &termencoding=&encoding
 "set encoding=UTF-8 fileencodings=.
 
