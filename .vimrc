@@ -16,8 +16,19 @@ set cmdheight=2
 set ruler
 set nu
 set guioptions-=T
-let &termencoding=&encoding
-set encoding=UTF-8 fileencodings=.
+
+"File Encoding
+if has("multi_byte")
+	if &termencoding == ""
+		let &termencoding = &encoding
+	endif
+	set encoding=utf-8
+	setglobal fileencoding=utf-8
+	set fileencodings=ucs-bom,utf-8,latin1
+endif
+"let &termencoding=&encoding
+"set encoding=UTF-8 fileencodings=.
+
 set nocompatible
 set cursorline
 set ttyfast
