@@ -7,9 +7,8 @@ filetype indent on
 set tabstop=4 softtabstop=4 shiftwidth=4
 
 set t_Co=256
-colorscheme navajo
-colors navajo
-set background=light
+set background=dark
+colorscheme solarized
 
 set mouse=a
 set autoindent
@@ -59,6 +58,8 @@ inoremap <left> <nop>
 inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
+
+inoremap <C-\> <C-O>O
 
 inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR>

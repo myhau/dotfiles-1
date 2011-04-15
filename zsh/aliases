@@ -26,3 +26,14 @@ function gcal_today() {
 function initFakeDisplay() {
 	startx -- /usr/bin/Xvfb :2 -screen 0 1024x768x24 & disown
 }
+
+### Cake Development Functions
+
+function setCakeProject() {
+	export cakeAppBase=$PWD
+	export cakeApp=$PWD/app
+}
+
+function cake() {
+	$cakeAppBase/cake/cake/console/cake $@ -app $cakeApp -working $cakeApp -root $cakeAppBase/cake -core $cakeAppBase/cake
+}
