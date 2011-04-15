@@ -7,6 +7,7 @@ filetype indent on
 set tabstop=4 softtabstop=4 shiftwidth=4
 
 set t_Co=256
+let g:solarized_termcolors=16
 set background=dark
 colorscheme solarized
 
@@ -26,8 +27,6 @@ if has("multi_byte")
 	setglobal fileencoding=utf-8
 	set fileencodings=ucs-bom,utf-8,latin1
 endif
-"let &termencoding=&encoding
-"set encoding=UTF-8 fileencodings=.
 
 set nocompatible
 set cursorline
