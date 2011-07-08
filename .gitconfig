@@ -1,6 +1,6 @@
 [core]
 	editor = vim
-	excludesfile = /home/moonlight/connrs.me.uk/.gitignore.user
+	excludesfile = ~/.gitignore.user
 [user]
 	name = Paul Connolley
 	email = shunuk@gmail.com
