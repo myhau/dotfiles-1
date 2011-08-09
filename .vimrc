@@ -1,8 +1,26 @@
 syntax on
 
-filetype on
-filetype plugin on
-filetype indent on
+"Vundle
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+"Add own bundles here
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Bundle 'git://github.com/msanders/snipmate.vim.git'
+Bundle 'vim-scripts/Rainbow-Parenthsis-Bundle'
+Bundle 'plasticboy/vim-markdown'
+Bundle 'vim-scripts/repeat.vim.git'
+Bundle 'scrooloose/nerdtree'
+Bundle 'juvenn/mustache.vim.git'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-surround'
+Bundle 'vim-scripts/undofile.vim.git'
+Bundle 'tobyS/vip'
+
+filetype plugin indent on
+"/Vundle
 
 set tabstop=4 softtabstop=4 shiftwidth=4
 
@@ -75,7 +93,7 @@ inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR>
 
-hi CursorLine cterm=NONE ctermbg=white ctermfg=NONE guibg=white guifg=NONE
+hi CursorLine cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=NONE
 
 nmap<silent> <F1> :call NumberToggle()<CR>
 
@@ -98,3 +116,4 @@ function! NumberToggle()
 		endif
 	endif
 endfunction
+
