@@ -1,6 +1,6 @@
 ### Aliases
 
-alias -r t="~/Documents/Dropbox/Library/Shell/todo.txt-cli/todo.sh"
+alias -r t="/usr/local/bin/todo.sh"
 alias -r g="google"
 if [[ -f "/usr/local/bin/hub" ]]; then
 	alias -r git="hub"
