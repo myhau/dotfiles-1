@@ -36,6 +36,10 @@ set ruler
 set nu
 set guioptions-=T
 
+" Toggling Paste Mode
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+
 "File Encoding
 if has("multi_byte")
 	if &termencoding == ""
@@ -69,6 +73,9 @@ set gdefault
 set incsearch
 set showmatch
 set hlsearch
+
+set foldmethod=indent
+set nofoldenable
 
 nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
