@@ -18,6 +18,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/undofile.vim.git'
 Bundle 'tobyS/vip'
+Bundle 'hail2u/vim-css3-syntax'
 
 filetype plugin indent on
 "/Vundle

@@ -16,3 +16,18 @@
 [github]
 	user = connrs
 	token = e1af4c8ab2e751d3931adfcb45691d54
+[color]
+	ui = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
