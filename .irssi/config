@@ -29,9 +29,10 @@ servers = (
   { address = "irc.link-net.org"; chatnet = "LinkNet"; port = "6667"; },
   { address = "silc.silcnet.org"; chatnet = "SILC"; port = "706"; },
   {
-    address = "chat.freenode.net";
+    address = "localhost";
     chatnet = "Freenode";
-    port = "6667";
+    port = "16667";
+    password = "goTramp0";
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "yes";
@@ -105,8 +106,8 @@ chatnets = {
   Freenode = {
     type = "IRC";
     nick = "connrs";
-    realname = "Paul";
-    autosendcmd = "/join #whatwg;/join #jquery;/join #documentcloud";
+    username = "connrs";
+    realname = "Paul Connolley";
   };
 };
 
@@ -274,15 +275,45 @@ statusbar = {
         topicbarend = { priority = "100"; alignment = "right"; };
       };
     };
+    awl_0 = {
+      items = {
+        barstart = { priority = "100"; };
+        awl_0 = { };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+    };
   };
 };
 settings = {
-  core = { real_name = "Paul Connolley"; user_name = "paul"; nick = "connrs"; };
+  core = {
+    real_name = "Paul Connolley";
+    user_name = "paul";
+    nick = "connrs";
+  };
   "fe-text" = { actlist_sort = "refnum"; paste_verify_line_count = "0"; };
-  "fe-common/core" = { theme = "dma147"; show_nickmode_empty = "no"; };
-  "perl/core/scripts" = { crapbuster_levels = "JOINS PARTS QUITS"; };
+  "fe-common/core" = { theme = "bork"; show_nickmode_empty = "no"; };
+  "perl/core/scripts" = {
+    crapbuster_levels = "JOINS PARTS QUITS";
+    awl_display_key = "$Q%K|%n$H$C$S";
+    tmux_away_active = "yes";
+  };
 };
 ignores = (
   { mask = "help"; level = "ALL"; },
-  { level = "JOINS PARTS QUITS NICKS"; channels = ( "#jquery", "#documentcloud", "#whatwg", "#html5" ); }
+  {
+    level = "JOINS PARTS QUITS NICKS";
+    channels = ( "#jquery", "#documentcloud", "#whatwg", "#html5" );
+  }
 );
+keyboard = ( 
+  { key = "meta-[M"; id = "command"; data = "mouse_xterm "; }
+);
+windows = {
+  1 = { immortal = "yes"; name = "(status)"; level = "ALL"; };
+  2 = { name = "hilight"; sticky = "yes"; };
+};
+mainwindows = {
+  1 = { first_line = "8"; lines = "56"; };
+  2 = { first_line = "1"; lines = "7"; };
+};
+logs = { };
