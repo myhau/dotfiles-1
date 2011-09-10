@@ -1,4 +1,5 @@
 syntax on
+set synmaxcol=2048
 
 "Vundle
 filetype off
@@ -13,6 +14,7 @@ Bundle 'vim-scripts/Rainbow-Parenthsis-Bundle'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'vim-scripts/repeat.vim.git'
 Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
 Bundle 'juvenn/mustache.vim.git'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-surround'
@@ -26,6 +28,8 @@ filetype plugin indent on
 "/Vundle
 
 set tabstop=4 softtabstop=4 shiftwidth=4
+set expandtab
+inoremap <S-Tab> <C-V><Tab>
 
 set t_Co=256
 let g:solarized_termcolors=16
@@ -45,12 +49,12 @@ set pastetoggle=<F2>
 
 "File Encoding
 if has("multi_byte")
-	if &termencoding == ""
-		let &termencoding = &encoding
-	endif
-	set encoding=utf-8
-	setglobal fileencoding=utf-8
-	set fileencodings=ucs-bom,utf-8,latin1
+    if &termencoding == ""
+        let &termencoding = &encoding
+    endif
+    set encoding=utf-8
+    setglobal fileencoding=utf-8
+    set fileencodings=ucs-bom,utf-8,latin1
 endif
 
 set nocompatible
@@ -85,7 +89,7 @@ nnoremap <tab> %
 vnoremap <tab> %
 set list
 set listchars=tab:»\ ,eol:¶
-		
+
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
@@ -94,8 +98,6 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
-nnoremap j gj
-nnoremap k gk
 
 inoremap <C-\> <C-O>O
 
@@ -108,22 +110,22 @@ hi CursorLine cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=NONE
 nmap<silent> <F1> :call NumberToggle()<CR>
 
 function! NumberToggle()
-	if exists("&rnu")
-		if&number
-			setlocal relativenumber
-		else
-			if&relativenumber
-				setlocal norelativenumber
-			else
-				setlocal number
-			endif
-		endif
-	else
-		if&number
-			setlocal nonumber
-		else
-			setlocal number
-		endif
-	endif
+    if exists("&rnu")
+        if&number
+            setlocal relativenumber
+        else
+            if&relativenumber
+                setlocal norelativenumber
+            else
+                setlocal number
+            endif
+        endif
+    else
+        if&number
+            setlocal nonumber
+        else
+            setlocal number
+        endif
+    endif
 endfunction
 
