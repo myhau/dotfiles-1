@@ -1,0 +1,1 @@
+alias start_dux_test='$SHELL /home/moonlight/connrs.me.uk/.tmuxinator/dux_test.tmux'
