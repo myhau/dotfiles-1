@@ -3,7 +3,7 @@ export ZSH=$HOME/.dotfiles/oh-my-zsh
 
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
-export ZSH_THEME="prose"
+export ZSH_THEME="bira"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -16,7 +16,7 @@ export ZSH_THEME="prose"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github)
+plugins=(git github gem rails3 ruby rvm vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.dotfiles/zsh/aliases
