@@ -20,6 +20,7 @@ plugins=(git github gem rails3 ruby rvm vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.dotfiles/zsh/aliases
+[[ -s "$HOME/.localaliases" ]] && source "$HOME/.localaliases"
 
 # Customize to your needs...
 export VIM_APP_DIR=/Applications/Utils/Development
