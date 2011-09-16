@@ -22,6 +22,7 @@ Bundle 'vim-scripts/undofile.vim.git'
 Bundle 'tobyS/vip'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'pangloss/vim-javascript'
+Bundle 'vim-scripts/PDV-revised'
 
 
 filetype plugin indent on
