@@ -33,7 +33,7 @@ set expandtab
 inoremap <S-Tab> <C-V><Tab>
 
 set t_Co=256
-let g:solarized_termcolors=16
+"let g:solarized_termcolors=16
 set background=dark
 colorscheme solarized
 
@@ -70,7 +70,6 @@ set wildmode=list:longest
 set visualbell
 set laststatus=2
 set backspace=indent,eol,start
-set relativenumber
 set undofile
 let mapleader=","
 nnoremap / /\v
