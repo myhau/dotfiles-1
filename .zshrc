@@ -19,17 +19,14 @@ export ZSH_THEME="bira"
 plugins=(git github gem rails3 ruby rvm)
 
 source $ZSH/oh-my-zsh.sh
-for source_file ($HOME/.dotfiles/*/*.zsh) source $source_file
-[[ -s "$HOME/.localaliases" ]] && source "$HOME/.localaliases"
 
 # Customize to your needs...
+for source_file ($HOME/.dotfiles/*/*.zsh) source $source_file
+
+[[ -s "$HOME/.localaliases" ]] && source "$HOME/.localaliases"
+
 export VIM_APP_DIR=/Applications/Utils/Development
-export TODOTXT_DEFAULT_ACTION=ls
 
 export EDITOR=vim
 
-export PATH=/usr/local/bin:$PATH:/usr/local/sbin:/sbin:/usr/libexec:/usr/bin:/Applications:/Developer/usr/bin:/Users/shunuk/Documents/Dropbox/Projects/src/todo
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm" # Load RVM function
-[[ -s "$HOME/.tmuxinator/scripts/tmuxinator" ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+export PATH=/usr/local/bin:$PATH:/usr/local/sbin:/sbin:/usr/libexec:/usr/bin:/Applications:/Developer/usr/bin
