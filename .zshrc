@@ -19,7 +19,7 @@ export ZSH_THEME="bira"
 plugins=(git github gem rails3 ruby rvm)
 
 source $ZSH/oh-my-zsh.sh
-source ~/.dotfiles/zsh/aliases
+for source_file ($HOME/.dotfiles/*/*.zsh) source $source_file
 [[ -s "$HOME/.localaliases" ]] && source "$HOME/.localaliases"
 
 # Customize to your needs...
