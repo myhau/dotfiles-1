@@ -23,7 +23,7 @@ Bundle 'tobyS/vip'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'pangloss/vim-javascript'
 Bundle 'vim-scripts/PDV-revised'
-
+Bundle 'matchit.zip'
 
 filetype plugin indent on
 "/Vundle
@@ -106,6 +106,8 @@ nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR>
 
 hi CursorLine cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=NONE
+
+set cpoptions+=$
 
 nmap<silent> <F1> :call NumberToggle()<CR>
 
