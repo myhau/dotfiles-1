@@ -1,2 +1,2 @@
-alias start_comms='$SHELL /Users/connrs/.tmuxinator/comms.tmux'
-alias start_dux_test='$SHELL /Users/connrs/.tmuxinator/dux_test.tmux'
+alias start_comms='$SHELL /home/moonlight/connrs.me.uk/.tmuxinator/comms.tmux'
+alias start_dux_test='$SHELL /home/moonlight/connrs.me.uk/.tmuxinator/dux_test.tmux'
