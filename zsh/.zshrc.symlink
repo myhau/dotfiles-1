@@ -21,7 +21,10 @@ plugins=(git github gem rails3 ruby rvm)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+[[ -s "$HOME/.dotfiles.local/pre.zsh" ]] && source "$HOME/.dotfiles.local/pre.zsh"
 for source_file ($HOME/.dotfiles/*/*.zsh) source $source_file
+[[ -s "$HOME/.dotfiles.local/post.zsh" ]] && source "$HOME/.dotfiles.local/post.zsh"
 
 [[ -s "$HOME/.localaliases" ]] && source "$HOME/.localaliases"
 
