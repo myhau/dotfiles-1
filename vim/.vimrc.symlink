@@ -21,9 +21,12 @@ Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/undofile.vim.git'
 Bundle 'tobyS/vip'
 Bundle 'hail2u/vim-css3-syntax'
-Bundle 'pangloss/vim-javascript'
+"Bundle 'pangloss/vim-javascript'
+Bundle 'connrs/vim-javascript'
 Bundle 'vim-scripts/PDV-revised'
 Bundle 'matchit.zip'
+Bundle 'PHP-correct-Indenting'
+Bundle 'guns/jellyx.vim'
 
 filetype plugin indent on
 "/Vundle
@@ -72,6 +75,9 @@ set laststatus=2
 set backspace=indent,eol,start
 set undofile
 let mapleader=","
+
+"Search
+"======
 nnoremap / /\v
 vnoremap / /\v
 set ignorecase
@@ -80,11 +86,19 @@ set gdefault
 set incsearch
 set showmatch
 set hlsearch
+" The leader defaults to backslash, so (by default) this
+" maps \* and \g* (see :help Leader).
+" These work like * and g*, but do not move the cursor and always set hls.
+map <Leader>* :let @/ = '\<'.expand('<cword>').'\>'\|set hlsearch<C-M>
+map <Leader>g* :let @/ = expand('<cword>')\|set hlsearch<C-M>
+" Clear hlsearch
+nnoremap <leader><space> :noh<cr>
 
+"Folding
+"=======
 set foldmethod=indent
 set nofoldenable
 
-nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
 set list
@@ -107,7 +121,7 @@ vnoremap <C-P> :call PhpDocRange()<CR>
 
 hi CursorLine cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=NONE
 
-set cpoptions+=$
+set cpoptions+=ces$
 
 nmap<silent> <F1> :call NumberToggle()<CR>
 
@@ -131,3 +145,8 @@ function! NumberToggle()
     endif
 endfunction
 
+" Remember buffer window position when switching
+if v:version >= 700
+    au BufLeave * let b:winview = winsaveview()
+    au BufEnter * if(exists('b:winview')) | call winrestview(b:winview) | endif
+endif
