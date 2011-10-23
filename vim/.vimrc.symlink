@@ -36,9 +36,6 @@ set expandtab
 inoremap <S-Tab> <C-V><Tab>
 
 set t_Co=256
-"let g:solarized_termcolors=256
-"set background=dark
-"colorscheme solarized
 colorscheme jellyx
 
 set mouse=a
@@ -119,8 +116,6 @@ inoremap <C-\> <C-O>O
 inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR>
-
-hi CursorLine cterm=NONE ctermbg=black ctermfg=NONE guibg=black guifg=NONE
 
 set cpoptions+=ces$
 

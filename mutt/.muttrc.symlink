@@ -4,4 +4,4 @@ set spoolfile="+INBOX"
 set header_cache =~/.mutt/cache/headers
 set message_cachedir =~/.mutt/cache/bodies
 set certificate_file =~/.mutt/certificates
-source $HOME/.dotfiles/mutt/solarized-dark-256.muttrc
+source $HOME/.dotfiles/mutt/xoria256m.muttrc
