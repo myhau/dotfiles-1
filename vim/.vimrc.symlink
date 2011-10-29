@@ -71,8 +71,13 @@ set wildmode=list:longest
 set visualbell
 set laststatus=2
 set backspace=indent,eol,start
-set undofile
 let mapleader=","
+
+"Temp Files
+"==========
+set undofile
+set undodir=~/.vim.undo
+set dir=~/.vim.swap//,/var/tmp//,/tmp//,.
 
 "Search
 "======
