@@ -23,7 +23,7 @@ Bundle 'tobyS/vip'
 Bundle 'hail2u/vim-css3-syntax'
 "Bundle 'pangloss/vim-javascript'
 Bundle 'connrs/vim-javascript'
-Bundle 'vim-scripts/PDV-revised'
+Bundle 'tobyS/vip', {'rtp': '.vim/'}
 Bundle 'matchit.zip'
 Bundle 'PHP-correct-Indenting'
 Bundle 'guns/jellyx.vim'
