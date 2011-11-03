@@ -18,12 +18,11 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'juvenn/mustache.vim.git'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-surround'
-Bundle 'vim-scripts/undofile.vim.git'
-Bundle 'tobyS/vip'
 Bundle 'hail2u/vim-css3-syntax'
 "Bundle 'pangloss/vim-javascript'
 Bundle 'connrs/vim-javascript'
-Bundle 'tobyS/vip', {'rtp': '.vim/'}
+"Bundle 'connrs/jcommenter.vim.git'
+Bundle 'PDV--phpDocumentor-for-Vim'
 Bundle 'matchit.zip'
 Bundle 'PHP-correct-Indenting'
 Bundle 'guns/jellyx.vim'
@@ -118,9 +117,25 @@ inoremap <right> <nop>
 
 inoremap <C-\> <C-O>O
 
+"PDV
+"=======
 inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR>
+au FileType * let g:pdv_cfg_Author = "Paul Connolley {connrs} <paul.connolley@gmail.com>"
+au FileType * let g:pdv_cfg_Copyright = ""
+au FileType * let g:pdv_cfg_License = "WTFPL"
+au FileType * let g:pdf_cfg_php4always = 0
+
+"jcommenter
+"==========
+"au FileType * let b:jcommenter_class_author="Paul Connolley [connrs] <paul.connolley@gmail.com>"
+"au FileType * let b:jcommenter_file_author="Paul Connolley [connrs] <paul.connolley@gmail.com>"
+"au FileType * map <M-c> :call JCommentWriter()<cr>
+
+"NERDTree
+"========
+nmap <leader>NT :NERDTree<cr>
 
 set cpoptions+=ces$
 
