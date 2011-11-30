@@ -27,6 +27,10 @@ Bundle 'vim-scripts/matchit.zip.git'
 Bundle 'PHP-correct-Indenting'
 Bundle 'cespare/vim-bclose'
 Bundle 'guns/jellyx.vim'
+Bundle 'phpunit'
+Bundle 'ecomba/vim-ruby-refactoring'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails'
 
 filetype plugin indent on
 "/Vundle
@@ -117,6 +121,11 @@ inoremap <left> <nop>
 inoremap <right> <nop>
 
 inoremap <C-\> <C-O>O
+
+"vim-bclose
+"==========
+
+nmap <C-W>! <Plug>Kwbd
 
 "PDV
 "=======

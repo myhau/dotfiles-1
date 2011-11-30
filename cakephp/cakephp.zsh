@@ -15,13 +15,6 @@ function setCakeProject() {
     fi
 }
 
-#function cake() {
-#    $cakeAppBase/cake/cake/console/cake $@ -app $cakeApp -working $cakeApp -root $cakeAppBase/cake -core $cakeAppBase/cake
-#}
-#function cake2() {                                                                                                                                  1 ↵
-#    /usr/local/bin/php -c $cakeAppBase/../cgi/php.ini -q $cakeApp/Console/cake.php -working "$cakeApp" -root "$cakeAppBase" -app "$cakeApp" "$@"
-#}
-
 function cake() {
     if [[ -a "$cakeAppBase/cake/lib/Cake/VERSION.txt" ]]; then
         /usr/local/bin/php -c $cakeAppBase/../cgi/php.ini -q $cakeApp/Console/cake.php -working "$cakeApp" -root "$cakeAppBase" -app "$cakeApp" "$@"
