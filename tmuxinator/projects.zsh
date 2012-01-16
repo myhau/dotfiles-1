@@ -10,7 +10,7 @@ function vim-project-server() {
 }
 
 function setProject () {
-    export appRoot=$PWD
+    export app_root=$PWD
     export app=$PWD/app
     alias -r v="tmux select-pane -t 0; vim --servername $VIM_SERVER_KEY --remote-silent"
 }
