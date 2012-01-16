@@ -1,7 +1,7 @@
 # ~/.tmuxinator/dux_test.yml
 # you can make as many tabs as you wish...
 
-project_name: DuxTest
+project_name: ODN
 project_root: /home/searchfirst/dux.searchfirst.co.uk/user/test
 rvm: 
 pre: 
@@ -9,6 +9,6 @@ tabs:
   - editor:
       layout: main-horizontal
       panes:
-        - setCakeProject launchVim
-        - setCakeProject
-        - setCakeProject
+        - setProject && vim-project-server
+        - setProject && cd app && clear
+        - setProject && cd app/webroot/js/app && clear
