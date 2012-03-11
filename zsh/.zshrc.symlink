@@ -33,3 +33,5 @@ export VIM_APP_DIR=/Applications/Utils/Development
 export EDITOR=vim
 
 export PATH=/usr/local/bin:$PATH:/usr/local/sbin:/sbin:/usr/libexec:/usr/bin:/Applications:/Developer/usr/bin
+
+export DISABLE_AUTO_TITLE=true

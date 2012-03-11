@@ -35,7 +35,7 @@ bind-key C-h clear-history
 ## tmux window titling for X
 set -g set-titles on
 set -g set-titles-string '[#(box_name):#I] #W'
-#setw -g automatic-rename on
+setw -g automatic-rename off
 setw -g window-status-format ' #I #W '
 setw -g window-status-attr bold
 # starts windows at 1 not 0
@@ -44,6 +44,7 @@ set -g base-index 1
 #pane management
 bind-key M-j command-prompt -p "Join pane from:"  "join-pane -s '%%'"
 bind-key M-s command-prompt -p "Send pane to:"  "join-pane -t '%%'"
+bind-key M-k command-prompt -p "Kill session:" "kill-session -t '%%'"
 
 #Load colour theme
 source $HOME/.dotfiles/tmux/xoria256m.tmux
