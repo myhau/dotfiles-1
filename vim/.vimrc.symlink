@@ -31,6 +31,8 @@ Bundle 'phpunit'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
+Bundle 'hallettj/jslint.vim.git'
+Bundle 'phpcodesniffer.vim'
 
 filetype plugin indent on
 "/Vundle
