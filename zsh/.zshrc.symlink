@@ -22,12 +22,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-[[ -s "$HOME/.dotfiles.local/pre.zsh" ]] && source "$HOME/.dotfiles.local/pre.zsh"
-for source_file ($HOME/.dotfiles/*/*.zsh) source $source_file
-[[ -s "$HOME/.dotfiles.local/post.zsh" ]] && source "$HOME/.dotfiles.local/post.zsh"
-
-[[ -s "$HOME/.localaliases" ]] && source "$HOME/.localaliases"
-
 export VIM_APP_DIR=/Applications/Utils/Development
 
 export EDITOR=vim
@@ -35,3 +29,9 @@ export EDITOR=vim
 export PATH=/usr/local/bin:$PATH:/usr/local/sbin:/sbin:/usr/libexec:/usr/bin:/Applications:/Developer/usr/bin
 
 export DISABLE_AUTO_TITLE=true
+
+[[ -s "$HOME/.dotfiles.local/pre.zsh" ]] && source "$HOME/.dotfiles.local/pre.zsh"
+for source_file ($HOME/.dotfiles/*/*.zsh) source $source_file
+[[ -s "$HOME/.dotfiles.local/post.zsh" ]] && source "$HOME/.dotfiles.local/post.zsh"
+
+[[ -s "$HOME/.localaliases" ]] && source "$HOME/.localaliases"

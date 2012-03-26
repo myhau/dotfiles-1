@@ -1,0 +1,3 @@
+function genTimestamp () {
+    date '+%s'
+}
