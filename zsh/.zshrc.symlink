@@ -3,7 +3,7 @@ export ZSH=$HOME/.dotfiles/oh-my-zsh
 
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
-export ZSH_THEME="xoria256m"
+export ZSH_THEME="lucius"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -35,3 +35,6 @@ for source_file ($HOME/.dotfiles/*/*.zsh) source $source_file
 [[ -s "$HOME/.dotfiles.local/post.zsh" ]] && source "$HOME/.dotfiles.local/post.zsh"
 
 [[ -s "$HOME/.localaliases" ]] && source "$HOME/.localaliases"
+
+# for tmux: export 256color
+if [[ -n "$TMUX" ]]; then export TERM=screen-256color; fi

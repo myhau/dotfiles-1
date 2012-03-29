@@ -27,6 +27,7 @@ Bundle 'vim-scripts/matchit.zip.git'
 Bundle 'PHP-correct-Indenting'
 Bundle 'cespare/vim-bclose'
 Bundle 'guns/jellyx.vim'
+Bundle 'vim-scripts/Lucius'
 Bundle 'phpunit'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'tpope/vim-fugitive'
@@ -42,7 +43,8 @@ set expandtab
 inoremap <S-Tab> <C-V><Tab>
 
 set t_Co=256
-colorscheme jellyx
+let g:lucius_style = "light"
+colorscheme lucius
 
 set mouse=a
 set autoindent
