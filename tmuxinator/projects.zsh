@@ -6,7 +6,7 @@ else
 fi
 
 function vim-project-server() {
-    vim --servername $VIM_SERVER_KEY
+    vim --servername $VIM_SERVER_KEY $@
 }
 
 function setProject () {
@@ -16,10 +16,13 @@ function setProject () {
 }
 
 function generateCtags () {
-    PROJECT=$1
-    PROJECT_PATH=$2
-    RPWD=$PWD
-    cd $PROJECT_PATH
-    ctags-exuberant -f ~/.ctags/$PROJECT -h \".php\" -R --totals=yes --tag-relative=yes --PHP-kinds=+cf --regex-PHP='/abstract class ([^ ]*)/\1/c/' --regex-PHP='/interface ([^ ]*)/\1/c/' --regex-PHP='/(public |static |abstract |protected |private )+function ([^ ])*/\2/f/'
-    cd $RPWD
+    ____gctPROJECT_PATH=$1
+    ____gct____gctPROJECT_PATH_PATH=$2
+    ____gctRPWD=$PWD
+    cd $____gct____gctPROJECT_PATH_PATH
+    ctags-exuberant -f ~/.ctags.d/$____gctPROJECT_PATH -h \".php\" -R --totals=yes --tag-relative=yes --PHP-kinds=+cf-v --regex-PHP='/abstract class ([^ ]*)/\1/c/' --regex-PHP='/interface ([^ ]*)/\1/c/' --regex-PHP='/(public |static |abstract |protected |private )+function ([^ ])*/\2/f/'
+    cd $____gctRPWD
+    ____gctRPWD=
+    ____gctPROJECT_PATH=
+    ____gct____gctPROJECT_PATH_PATH=
 }
