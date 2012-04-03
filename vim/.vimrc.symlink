@@ -19,9 +19,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-markdown'
 Bundle 'hail2u/vim-css3-syntax'
-"Bundle 'pangloss/vim-javascript'
 Bundle 'connrs/vim-javascript'
-"Bundle 'connrs/jcommenter.vim.git'
 Bundle 'PDV--phpDocumentor-for-Vim'
 Bundle 'vim-scripts/matchit.zip.git'
 Bundle 'PHP-correct-Indenting'
@@ -35,6 +33,8 @@ Bundle 'tpope/vim-rails'
 Bundle 'hallettj/jslint.vim.git'
 Bundle 'phpcodesniffer.vim'
 Bundle 'vim-scripts/taglist.vim.git'
+Bundle 'majutsushi/tagbar'
+Bundle 'vim-scripts/wombat256.vim.git'
 
 filetype plugin indent on
 "/Vundle
@@ -44,8 +44,7 @@ set expandtab
 inoremap <S-Tab> <C-V><Tab>
 
 set t_Co=256
-let g:lucius_style = "light"
-colorscheme lucius
+colorscheme wombat256mod
 
 set mouse=a
 set autoindent
@@ -152,12 +151,9 @@ au FileType * let g:pdf_cfg_php4always = 0
 "========
 nmap <leader>NT :NERDTree<cr>
 
-"Taglist
-"=======
-1
-let Tlist_Use_Right_Window = 1
-nmap <leader>TL :TlistToggle<cr>
-
+"Tagbar
+"======
+nmap <F8> :TagbarToggle<CR>
 
 nmap<silent> <F1> :call NumberToggle()<CR>
 
@@ -196,3 +192,18 @@ augroup END
 
 set cpoptions+=ces$
 
+function! s:Rgb2xterm(color)
+   let best_match=0
+   let smallest_distance = 10000000000
+   let r = eval('0x'.a:color[1].a:color[2])
+   let g = eval('0x'.a:color[3].a:color[4])
+   let b = eval('0x'.a:color[5].a:color[6])
+   for c in range(0,254)
+      let d = s:pow(s:colortable[c][0]-r,2) + s:pow(s:colortable[c][1]-g,2) + s:pow(s:colortable[c][2]-b,2)
+      if d<smallest_distance
+      let smallest_distance = d
+      let best_match = c
+      endif
+   endfor
+   return best_match
+endfunction

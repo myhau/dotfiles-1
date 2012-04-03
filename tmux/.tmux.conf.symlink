@@ -47,6 +47,6 @@ bind-key M-s command-prompt -p "Send pane to:"  "join-pane -t '%%'"
 bind-key M-k command-prompt -p "Kill session:" "kill-session -t '%%'"
 
 #Load colour theme
-source $HOME/.dotfiles/tmux/lucius.tmux
+source $HOME/.dotfiles/tmux/wombat256.tmux
 
 new-session
