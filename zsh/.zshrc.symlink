@@ -38,3 +38,5 @@ for source_file ($HOME/.dotfiles/*/*.zsh) source $source_file
 
 # for tmux: export 256color
 if [[ -n "$TMUX" ]]; then export TERM=screen-256color; fi
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
