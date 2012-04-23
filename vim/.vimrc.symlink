@@ -34,6 +34,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'phpcodesniffer.vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'vim-scripts/wombat256.vim.git'
+Bundle 'jiangmiao/auto-pairs'
 
 filetype plugin indent on
 "/Vundle
@@ -154,7 +155,7 @@ nmap <leader>NT :NERDTree<cr>
 "======
 nmap <F8> :TagbarToggle<CR>
 
-nmap<silent> <F1> :call NumberToggle()<CR>
+nmap<silent> <F2> :call NumberToggle()<CR>
 
 function! NumberToggle()
     if exists("&rnu")
