@@ -19,3 +19,4 @@ set -g pane-border-bg default
 set -g pane-border-fg "#444444"
 
 set -g clock-mode-colour "#d7d787"
+set -g clock-mode-style 24
