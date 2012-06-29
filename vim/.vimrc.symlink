@@ -20,9 +20,10 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-markdown'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'connrs/vim-javascript'
-Bundle 'PDV--phpDocumentor-for-Vim'
+Bundle 'spf13/PIV'
+"Bundle 'PDV--phpDocumentor-for-Vim'
 Bundle 'vim-scripts/matchit.zip.git'
-Bundle 'PHP-correct-Indenting'
+"Bundle 'PHP-correct-Indenting'
 Bundle 'cespare/vim-bclose'
 "Bundle 'guns/jellyx.vim'
 "Bundle 'vim-scripts/Lucius'
@@ -114,6 +115,11 @@ nnoremap <tab> %
 vnoremap <tab> %
 set list
 set listchars=tab:»\ ,eol:¶
+set wrap
+set linebreak
+set textwidth=0
+set wrapmargin=0
+let &showbreak='+++ '
 
 nnoremap <up> <nop>
 nnoremap <down> <nop>
@@ -136,6 +142,7 @@ nmap <C-W>! <Plug>Kwbd
 inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR>
+let g:DisableAutoPHPFolding = 1
 au FileType * let g:pdv_cfg_Author = "Paul Connolley {connrs} <paul.connolley@gmail.com>"
 au FileType * let g:pdv_cfg_Copyright = ""
 au FileType * let g:pdv_cfg_License = "WTFPL"
@@ -189,6 +196,10 @@ augroup NO_CURSOR_MOVE_ON_FOCUS
   au FocusLost * let g:oldmouse=&mouse | set mouse=
   au FocusGained * if exists('g:oldmouse') | let &mouse=g:oldmouse | unlet g:oldmouse | endif
 augroup END
+
+" Prevent mouse drag from activating visual mode
+noremap <LeftDrag> <LeftMouse>
+noremap! <LeftDrag> <LeftMouse>
 
 set cpoptions+=ces$
 
