@@ -162,27 +162,28 @@ nmap <leader>NT :NERDTree<cr>
 "======
 nmap <F8> :TagbarToggle<CR>
 
-nmap<silent> <F2> :call NumberToggle()<CR>
 
 function! NumberToggle()
     if exists("&rnu")
-        if&number
+        if(&number == 1)
             setlocal relativenumber
         else
-            if&relativenumber
+            if(&relativenumber == 1)
                 setlocal norelativenumber
             else
                 setlocal number
             endif
         endif
     else
-        if&number
+        if(&number == 1)
             setlocal nonumber
         else
             setlocal number
         endif
     endif
 endfunction
+
+nnoremap <F1> :call NumberToggle()<CR>
 
 " Remember buffer window position when switching
 if v:version >= 700
