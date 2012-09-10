@@ -36,6 +36,7 @@ Bundle 'phpcodesniffer.vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'vim-scripts/wombat256.vim.git'
 Bundle 'jiangmiao/auto-pairs'
+Bundle 'scrooloose/syntastic'
 
 filetype plugin indent on
 "/Vundle
@@ -225,3 +226,8 @@ function! TabToggle()
   endif
 endfunction
 nmap <F9> mz:execute TabToggle()<CR>'z
+
+"Syntastic
+"=========
+map <leader>Sc :SyntasticCheck<cr>
+map <leader>Se :Errors<cr>

@@ -5,3 +5,5 @@ function genTimestamp () {
 function formatTimestamp() {
     date -d @$@
 }
+
+setopt nocorrectall
