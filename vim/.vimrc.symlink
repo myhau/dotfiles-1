@@ -37,6 +37,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'vim-scripts/wombat256.vim.git'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-git'
 
 filetype plugin indent on
 "/Vundle
