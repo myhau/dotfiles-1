@@ -1,6 +1,7 @@
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore.user
+	quotepath = false
 [user]
 	name = Paul Connolley
 	email = paul.connolley@gmail.com
