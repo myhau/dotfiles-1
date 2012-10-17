@@ -52,6 +52,6 @@ unbind -
 bind - last-window \; swap-pane -s tmux-zoom.0 \; kill-window -t tmux-zoom
 
 #Load colour theme
-source $HOME/.dotfiles/tmux/wombat256.tmux
+source $HOME/.dotfiles/tmux/tomorrow-night.tmux
 
 new-session
