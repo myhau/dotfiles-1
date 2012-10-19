@@ -11,10 +11,8 @@ setw -g window-status-activity-fg "#8abeb7"
 setw -g window-status-activity-bg "#1d1f21"
 
 ## pane border and colors
-#set -g pane-active-border-bg "#373b41"
-set -g pane-active-border-bg "#373b41"
+set -g pane-active-border-bg default
 set -g pane-active-border-fg "#373b41"
-#set -g pane-border-bg "#373b41"
 set -g pane-border-bg default
 set -g pane-border-fg "#373b41"
 
