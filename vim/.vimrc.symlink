@@ -43,7 +43,7 @@ inoremap <S-Tab> <C-V><Tab>
 
 set t_Co=256
 "colorscheme wombat256mod
-colorscheme Tomorrow-Night
+colorscheme Tomorrow
 
 set mouse=a
 set autoindent

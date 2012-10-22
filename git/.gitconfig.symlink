@@ -20,22 +20,22 @@
 [color]
 	ui = auto
 [color "branch"]
-	current = yellow reverse
-	local = yellow
-	remote = green
+	current = 178 reverse
+	local = 178
+	remote = 64
 [color "diff"]
-	meta = 109
-	frag = 139
-	old = 167
-    new = 143
+	meta = 67
+	frag = 97
+	old = 160
+    new = 64
 [color "status"]
-	added = 222
-	changed = 143
-	untracked = 109
-    nobranch = 167
+	added = 178
+	changed = 64
+	untracked = 67
+    nobranch = 160
     header = 102
-    updated = 222
-    branch = 173
+    updated = 178
+    branch = 160
 [giggle]
 	main-window-maximized = false
 	main-window-geometry = 973x623+2090+385
