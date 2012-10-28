@@ -1,46 +1,46 @@
 [core]
-	editor = vim
-	excludesfile = ~/.gitignore.user
-	quotepath = false
+    editor = vim
+    excludesfile = ~/.gitignore.user
+    quotepath = false
 [user]
-	name = Paul Connolley
-	email = paul.connolley@gmail.com
+    name = Paul Connolley
+    email = paul.connolley@gmail.com
 [alias]
-	ci = commit
-	co = checkout
-	cl = clone
-	br = branch
-	unstage = reset HEAD --
-	last = log -1 HEAD
-	ui = !/usr/bin/gity
-	discard = checkout --
+    ci = commit
+    co = checkout
+    cl = clone
+    br = branch
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    ui = !/usr/bin/gity
+    discard = checkout --
 [github]
-	user = connrs
+    user = connrs
     token = $(cat $HOME/.dotfiles.local/github_token)
 [color]
-	ui = auto
+    ui = auto
 [color "branch"]
-	current = 178 reverse
-	local = 178
-	remote = 64
+    current = yellow reverse
+    local = yellow
+    remote = green
 [color "diff"]
-	meta = 67
-	frag = 97
-	old = 160
-    new = 64
+    meta = 109
+    frag = 139
+    old = 167
+    new = 143
 [color "status"]
-	added = 178
-	changed = 64
-	untracked = 67
-    nobranch = 160
+    added = 222
+    changed = 143
+    untracked = 109
+    nobranch = 167
     header = 102
-    updated = 178
-    branch = 160
+    updated = 222
+    branch = 173
 [giggle]
-	main-window-maximized = false
-	main-window-geometry = 973x623+2090+385
-	history-view-vpane-position = 210
-	main-window-view = HistoryView
-	file-view-vpane-position = 552
-	file-view-hpane-position = 363
-	show-graph = true
+    main-window-maximized = false
+    main-window-geometry = 973x623+2090+385
+    history-view-vpane-position = 210
+    main-window-view = HistoryView
+    file-view-vpane-position = 552
+    file-view-hpane-position = 363
+    show-graph = true
