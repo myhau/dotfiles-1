@@ -20,10 +20,10 @@ set -g clock-mode-colour "#81a2be"
 set -g clock-mode-style 24
 
 set -g message-bg "#8abeb7"
-set -g message-fg "#ffffff"
+set -g message-fg "#000000"
 
 set -g message-command-bg "#8abeb7"
-set -g message-command-fg "#ffffff"
+set -g message-command-fg "#000000"
 
 set -g mode-bg "#8abeb7"
-set -g mode-fg "#ffffff"
+set -g mode-fg "#000000"

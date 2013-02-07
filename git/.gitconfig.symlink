@@ -14,6 +14,9 @@
     last = log -1 HEAD
     ui = !/usr/bin/gity
     discard = checkout --
+	permission-reset = "!git diff -p | grep -E \"^(diff|old mode|new mode)\" | sed -e \"s/^old/NEW/;s/^new/old/;s/^NEW/new/\" | git apply"
+	printlast = test hoho
+	search = "!f() { git log --grep=\"$1\" -i --stat=500 --name-status; }; f"
 [github]
     user = connrs
     token = $(cat $HOME/.dotfiles.local/github_token)

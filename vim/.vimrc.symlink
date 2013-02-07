@@ -33,6 +33,9 @@ Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-git'
 Bundle 'AD7six/vim-independence'
 Bundle 'chriskempson/vim-tomorrow-theme'
+Bundle 'gregsexton/gitv'
+Bundle 'motemen/git-vim'
+Bundle 'eldamar/holo-theme', {'rtp': 'vim/'}
 
 filetype plugin indent on
 "/Vundle
@@ -42,7 +45,6 @@ set expandtab
 inoremap <S-Tab> <C-V><Tab>
 
 set t_Co=256
-"colorscheme wombat256mod
 colorscheme Tomorrow-Night
 hi Normal ctermbg=none
 
