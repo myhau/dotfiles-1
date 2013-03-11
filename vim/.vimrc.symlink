@@ -17,7 +17,8 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'juvenn/mustache.vim.git'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-markdown'
-Bundle 'hail2u/vim-css3-syntax'
+"Bundle 'hail2u/vim-css3-syntax'
+"Bundle 'lepture/vim-css'
 Bundle 'connrs/vim-javascript'
 Bundle 'spf13/PIV'
 Bundle 'vim-scripts/matchit.zip.git'
@@ -36,6 +37,7 @@ Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'gregsexton/gitv'
 Bundle 'motemen/git-vim'
 Bundle 'eldamar/holo-theme', {'rtp': 'vim/'}
+Bundle 'groenewege/vim-less'
 
 filetype plugin indent on
 "/Vundle
