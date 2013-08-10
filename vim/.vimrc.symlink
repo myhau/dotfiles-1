@@ -17,8 +17,6 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'juvenn/mustache.vim.git'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-markdown'
-"Bundle 'hail2u/vim-css3-syntax'
-"Bundle 'lepture/vim-css'
 Bundle 'connrs/vim-javascript'
 Bundle 'spf13/PIV'
 Bundle 'vim-scripts/matchit.zip.git'
@@ -28,16 +26,14 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 Bundle 'phpcodesniffer.vim'
 Bundle 'majutsushi/tagbar'
-Bundle 'vim-scripts/wombat256.vim.git'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-git'
 Bundle 'AD7six/vim-independence'
-Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'gregsexton/gitv'
 Bundle 'motemen/git-vim'
-Bundle 'eldamar/holo-theme', {'rtp': 'vim/'}
 Bundle 'groenewege/vim-less'
+Bundle 'sjl/badwolf'
 
 filetype plugin indent on
 "/Vundle
@@ -47,8 +43,10 @@ set expandtab
 inoremap <S-Tab> <C-V><Tab>
 
 set t_Co=256
-colorscheme Tomorrow-Night
-hi Normal ctermbg=none
+set background=dark
+let g:badwolf_darkgutter = 1
+colorscheme badwolf
+"hi Normal ctermbg=none
 
 set mouse=a
 set autoindent
@@ -216,8 +214,8 @@ set expandtab
 " allow toggling between local and default mode
 function! TabToggle()
   if &expandtab
-    set tabstop=8
-    set shiftwidth=8
+    set tabstop=4
+    set shiftwidth=4
     set softtabstop=0
     set noexpandtab
   else
@@ -233,3 +231,15 @@ nmap <F9> mz:execute TabToggle()<CR>'z
 "=========
 map <leader>Sc :SyntasticCheck<cr>
 map <leader>Se :Errors<cr>
+
+if exists("$VIMTABSOVERRIDE")
+    set noexpandtab
+endif
+
+"TERM 256COLOR LEARNINGS
+if &term =~ '256color'
+	" Disable Background Color Erase (BCE) so that color schemes
+	" work properly when Vim is used inside tmux and GNU screen
+	" See also http://snk.tuxfamily.org/log/vim-256color-bce.html
+	set t_ut=
+endif
