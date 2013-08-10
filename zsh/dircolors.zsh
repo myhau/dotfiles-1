@@ -1,1 +1,1 @@
-eval $(dircolors $HOME/.dotfiles/zsh/dircolors/xoria256m)
+eval $(dircolors $HOME/.dotfiles/zsh/dircolors/badwolf.dircolors)
