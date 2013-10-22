@@ -17,7 +17,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'juvenn/mustache.vim.git'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-markdown'
-Bundle 'connrs/vim-javascript'
+Bundle 'pangloss/vim-javascript'
 Bundle 'spf13/PIV'
 Bundle 'vim-scripts/matchit.zip.git'
 Bundle 'cespare/vim-bclose'
@@ -148,12 +148,6 @@ au FileType * let g:pdv_cfg_Author = "Paul Connolley {connrs} <paul.connolley@gm
 au FileType * let g:pdv_cfg_Copyright = ""
 au FileType * let g:pdv_cfg_License = "WTFPL"
 au FileType * let g:pdf_cfg_php4always = 0
-
-"jcommenter
-"==========
-"au FileType * let b:jcommenter_class_author="Paul Connolley [connrs] <paul.connolley@gmail.com>"
-"au FileType * let b:jcommenter_file_author="Paul Connolley [connrs] <paul.connolley@gmail.com>"
-"au FileType * map <M-c> :call JCommentWriter()<cr>
 
 "NERDTree
 "========

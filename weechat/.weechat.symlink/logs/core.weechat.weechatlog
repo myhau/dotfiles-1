@@ -1,0 +1,191 @@
+2013-09-12 16:47:09		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-09-12 16:49:00		Plugins loaded:
+2013-09-12 16:49:00		  guile: Support of scheme scripts (with Guile)
+2013-09-12 16:49:00		  aspell: Spell checker for input (with Aspell)
+2013-09-12 16:49:00		  logger: Log buffers to files
+2013-09-12 16:49:00		  fifo: FIFO pipe for remote control
+2013-09-12 16:49:00		  irc: IRC (Internet Relay Chat) protocol
+2013-09-12 16:49:00		  script: Scripts manager
+2013-09-12 16:49:00		  python: Support of python scripts
+2013-09-12 16:49:00		  xfer: DCC file transfer and direct chat
+2013-09-12 16:49:00		  rmodifier: String modifier with regular expressions
+2013-09-12 16:49:00		  perl: Support of perl scripts
+2013-09-12 16:49:00		  lua: Support of lua scripts
+2013-09-12 16:49:00		  tcl: Support of tcl scripts
+2013-09-12 16:49:00		  relay: Relay WeeChat data to remote application (irc/weechat protocols)
+2013-09-12 16:49:00		  ruby: Support of ruby scripts
+2013-09-12 16:49:00		  alias: Alias commands
+2013-09-12 16:49:00		  charset: Charset conversions
+2013-09-12 16:51:36		fifo: pipe closed
+2013-09-12 16:51:38		python scripts loaded: vimode
+2013-09-12 16:51:38		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-09-12 16:55:37		irc: server irc.freenode.org created (temporary server, NOT SAVED!)
+2013-09-12 16:57:37		python: scripts unloaded
+2013-09-12 16:57:37		fifo: pipe closed
+2013-09-12 16:57:38		python scripts loaded: keepnick, vimode
+2013-09-12 16:57:38		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-09-12 16:57:46		irc: server irc.freenode.org created (temporary server, NOT SAVED!)
+2013-09-12 16:58:22	=!=	No help available, "keepnick" is not a command or an option
+2013-09-12 16:58:27		[core]
+2013-09-12 16:58:27		  away    buffer  command debug   filter  history key     mouse   plugin  quit    repeat  set     upgrade version window 
+2013-09-12 16:58:27		  bar     color   cursor  eval    help    input   layout  mute    proxy   reload  save    unset   uptime  wait   
+2013-09-12 16:58:27		[guile]
+2013-09-12 16:58:27		  guile
+2013-09-12 16:58:27		[aspell]
+2013-09-12 16:58:27		  aspell
+2013-09-12 16:58:27		[logger]
+2013-09-12 16:58:27		  logger
+2013-09-12 16:58:27		[irc]
+2013-09-12 16:58:27		  admin      ctcp       devoice    info       kickban    map        names      oper       quiet      sajoin     server     stats      unban      wallchops 
+2013-09-12 16:58:27		  allchan    cycle      die        invite     kill       me         nick       part       quote      samode     service    summon     userhost   wallops   
+2013-09-12 16:58:27		  allserv    dcc        disconnect ison       links      mode       notice     ping       reconnect  sanick     servlist   time       users      who       
+2013-09-12 16:58:27		  ban        dehalfop   halfop     join       list       motd       notify     pong       rehash     sapart     squery     topic      version    whois     
+2013-09-12 16:58:27		  connect    deop       ignore     kick       lusers     msg        op         query      restart    saquit     squit      trace      voice      whowas    
+2013-09-12 16:58:27		[script]
+2013-09-12 16:58:27		  script
+2013-09-12 16:58:27		[python]
+2013-09-12 16:58:27		  python
+2013-09-12 16:58:27		[xfer]
+2013-09-12 16:58:27		  me   xfer
+2013-09-12 16:58:27		[rmodifier]
+2013-09-12 16:58:27		  rmodifier
+2013-09-12 16:58:27		[perl]
+2013-09-12 16:58:27		  perl
+2013-09-12 16:58:27		[lua]
+2013-09-12 16:58:27		  lua
+2013-09-12 16:58:27		[tcl]
+2013-09-12 16:58:27		  tcl
+2013-09-12 16:58:27		[relay]
+2013-09-12 16:58:27		  relay
+2013-09-12 16:58:27		[ruby]
+2013-09-12 16:58:27		  ruby
+2013-09-12 16:58:27		[alias]
+2013-09-12 16:58:27		  AAWAY   AME     ANICK   C       CL      EXIT    J       KB      M       N       REDRAW  SIGNOFF UB      unalias W       WI      WW     
+2013-09-12 16:58:27		  alias   AMSG    BYE     CHAT    CLOSE   IG      K       LEAVE   MUB     Q       SAY     T       UMODE   V       WC      WII    
+2013-09-12 16:58:27		[charset]
+2013-09-12 16:58:27		  charset
+2013-09-12 16:59:04	=!=	Error: unknown command "keepnick" (type /help for help)
+2013-09-12 16:59:43		python: scripts unloaded
+2013-09-12 16:59:43		fifo: pipe closed
+2013-09-12 16:59:45		python scripts loaded: keepnick, vimode
+2013-09-12 16:59:45		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-09-12 16:59:49		[core]
+2013-09-12 16:59:49		  away    buffer  command debug   filter  history key     mouse   plugin  quit    repeat  set     upgrade version window 
+2013-09-12 16:59:49		  bar     color   cursor  eval    help    input   layout  mute    proxy   reload  save    unset   uptime  wait   
+2013-09-12 16:59:49		[guile]
+2013-09-12 16:59:49		  guile
+2013-09-12 16:59:49		[aspell]
+2013-09-12 16:59:49		  aspell
+2013-09-12 16:59:49		[logger]
+2013-09-12 16:59:49		  logger
+2013-09-12 16:59:49		[irc]
+2013-09-12 16:59:49		  admin      ctcp       devoice    info       kickban    map        names      oper       quiet      sajoin     server     stats      unban      wallchops 
+2013-09-12 16:59:49		  allchan    cycle      die        invite     kill       me         nick       part       quote      samode     service    summon     userhost   wallops   
+2013-09-12 16:59:49		  allserv    dcc        disconnect ison       links      mode       notice     ping       reconnect  sanick     servlist   time       users      who       
+2013-09-12 16:59:49		  ban        dehalfop   halfop     join       list       motd       notify     pong       rehash     sapart     squery     topic      version    whois     
+2013-09-12 16:59:49		  connect    deop       ignore     kick       lusers     msg        op         query      restart    saquit     squit      trace      voice      whowas    
+2013-09-12 16:59:49		[script]
+2013-09-12 16:59:49		  script
+2013-09-12 16:59:49		[python]
+2013-09-12 16:59:49		  python
+2013-09-12 16:59:49		[xfer]
+2013-09-12 16:59:49		  me   xfer
+2013-09-12 16:59:49		[rmodifier]
+2013-09-12 16:59:49		  rmodifier
+2013-09-12 16:59:49		[perl]
+2013-09-12 16:59:49		  perl
+2013-09-12 16:59:49		[lua]
+2013-09-12 16:59:49		  lua
+2013-09-12 16:59:49		[tcl]
+2013-09-12 16:59:49		  tcl
+2013-09-12 16:59:49		[relay]
+2013-09-12 16:59:49		  relay
+2013-09-12 16:59:49		[ruby]
+2013-09-12 16:59:49		  ruby
+2013-09-12 16:59:49		[alias]
+2013-09-12 16:59:49		  AAWAY   AME     ANICK   C       CL      EXIT    J       KB      M       N       REDRAW  SIGNOFF UB      unalias W       WI      WW     
+2013-09-12 16:59:49		  alias   AMSG    BYE     CHAT    CLOSE   IG      K       LEAVE   MUB     Q       SAY     T       UMODE   V       WC      WII    
+2013-09-12 16:59:49		[charset]
+2013-09-12 16:59:49		  charset
+2013-09-12 16:59:52	=!=	Error: unknown command "keepnick" (type /help for help)
+2013-09-12 17:02:17		irc: server irc.freenode.org created (temporary server, NOT SAVED!)
+2013-09-12 17:02:22	=!=	Error: unknown command "keepnick" (type /help for help)
+2013-09-12 17:03:15	=!=	Error: unknown command "plugins" (type /help for help)
+2013-09-12 17:03:19		Plugins loaded:
+2013-09-12 17:03:19		  guile: Support of scheme scripts (with Guile)
+2013-09-12 17:03:19		  aspell: Spell checker for input (with Aspell)
+2013-09-12 17:03:19		  logger: Log buffers to files
+2013-09-12 17:03:19		  fifo: FIFO pipe for remote control
+2013-09-12 17:03:19		  irc: IRC (Internet Relay Chat) protocol
+2013-09-12 17:03:19		  script: Scripts manager
+2013-09-12 17:03:19		  python: Support of python scripts
+2013-09-12 17:03:19		  xfer: DCC file transfer and direct chat
+2013-09-12 17:03:19		  rmodifier: String modifier with regular expressions
+2013-09-12 17:03:19		  perl: Support of perl scripts
+2013-09-12 17:03:19		  lua: Support of lua scripts
+2013-09-12 17:03:19		  tcl: Support of tcl scripts
+2013-09-12 17:03:19		  relay: Relay WeeChat data to remote application (irc/weechat protocols)
+2013-09-12 17:03:19		  ruby: Support of ruby scripts
+2013-09-12 17:03:19		  alias: Alias commands
+2013-09-12 17:03:19		  charset: Charset conversions
+2013-09-12 17:03:26	=!=	Error: unknown command "scripts" (type /help for help)
+2013-09-12 17:03:29		script: downloading list of scripts...
+2013-09-12 17:03:29		script: 247 scripts for WeeChat 0.4.0
+2013-09-12 17:04:07		script: script "keepnick.py" is already installed and up-to-date
+2013-09-12 17:04:11	=!=	python: unable to register script "keepnick" (another script already exists with this name)
+2013-09-12 17:04:11	=!=	python: unable to call function "info_get", script is not initialized (script: -)
+2013-09-12 17:04:11	=!=	keepnick : needs version 0.3.4 or higher
+2013-09-12 17:04:11	=!=	python: unable to call function "command", script is not initialized (script: -)
+2013-09-12 17:04:11	=!=	python: function "register" not found (or failed) in file "/home/connrs/.dotfiles/weechat/.weechat.symlink/python/autoload/keepnick.py"
+2013-09-12 17:05:09	=!=	python: unable to register script "keepnick" (another script already exists with this name)
+2013-09-12 17:05:09	=!=	python: unable to call function "info_get", script is not initialized (script: -)
+2013-09-12 17:05:09	=!=	keepnick : needs version 0.3.4 or higher
+2013-09-12 17:05:09	=!=	python: unable to call function "command", script is not initialized (script: -)
+2013-09-12 17:05:09	=!=	python: function "register" not found (or failed) in file "/home/connrs/.dotfiles/weechat/.weechat.symlink/python/autoload/keepnick.py"
+2013-09-12 17:05:33		Command 'quit' not found.
+2013-09-12 17:05:41		python: scripts unloaded
+2013-09-12 17:05:41		fifo: pipe closed
+2013-09-12 17:05:47		script: 247 scripts for WeeChat 0.4.0
+2013-09-12 17:05:47		python scripts loaded: keepnick, vimode
+2013-09-12 17:05:47		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-09-12 17:05:56	=!=	Error: unknown command "keepnick" (type /help for help)
+2013-09-13 09:01:16		[core]
+2013-09-13 09:01:16		  away    buffer  command debug   filter  history key     mouse   plugin  quit    repeat  set     upgrade version window 
+2013-09-13 09:01:16		  bar     color   cursor  eval    help    input   layout  mute    proxy   reload  save    unset   uptime  wait   
+2013-09-13 09:01:16		[guile]
+2013-09-13 09:01:16		  guile
+2013-09-13 09:01:16		[aspell]
+2013-09-13 09:01:16		  aspell
+2013-09-13 09:01:16		[logger]
+2013-09-13 09:01:16		  logger
+2013-09-13 09:01:16		[irc]
+2013-09-13 09:01:16		  admin      ctcp       devoice    info       kickban    map        names      oper       quiet      sajoin     server     stats      unban      wallchops 
+2013-09-13 09:01:16		  allchan    cycle      die        invite     kill       me         nick       part       quote      samode     service    summon     userhost   wallops   
+2013-09-13 09:01:16		  allserv    dcc        disconnect ison       links      mode       notice     ping       reconnect  sanick     servlist   time       users      who       
+2013-09-13 09:01:16		  ban        dehalfop   halfop     join       list       motd       notify     pong       rehash     sapart     squery     topic      version    whois     
+2013-09-13 09:01:16		  connect    deop       ignore     kick       lusers     msg        op         query      restart    saquit     squit      trace      voice      whowas    
+2013-09-13 09:01:16		[script]
+2013-09-13 09:01:16		  script
+2013-09-13 09:01:16		[python]
+2013-09-13 09:01:16		  python
+2013-09-13 09:01:16		[xfer]
+2013-09-13 09:01:16		  me   xfer
+2013-09-13 09:01:16		[rmodifier]
+2013-09-13 09:01:16		  rmodifier
+2013-09-13 09:01:16		[perl]
+2013-09-13 09:01:16		  perl
+2013-09-13 09:01:16		[lua]
+2013-09-13 09:01:16		  lua
+2013-09-13 09:01:16		[tcl]
+2013-09-13 09:01:16		  tcl
+2013-09-13 09:01:16		[relay]
+2013-09-13 09:01:16		  relay
+2013-09-13 09:01:16		[ruby]
+2013-09-13 09:01:16		  ruby
+2013-09-13 09:01:16		[alias]
+2013-09-13 09:01:16		  AAWAY   AME     ANICK   C       CL      EXIT    J       KB      M       N       REDRAW  SIGNOFF UB      unalias W       WI      WW     
+2013-09-13 09:01:16		  alias   AMSG    BYE     CHAT    CLOSE   IG      K       LEAVE   MUB     Q       SAY     T       UMODE   V       WC      WII    
+2013-09-13 09:01:16		[charset]
+2013-09-13 09:01:16		  charset
+2013-09-17 09:32:14		python: scripts unloaded
+2013-09-17 09:32:14		fifo: pipe closed
