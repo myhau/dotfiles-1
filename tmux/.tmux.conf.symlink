@@ -40,6 +40,7 @@ setw -g window-status-format ' #I #W '
 setw -g window-status-attr bold
 # starts windows at 1 not 0
 set -g base-index 1
+set-window-option -g pane-base-index 1
 
 #pane management
 bind-key M-j command-prompt -p "Join pane from:"  "join-pane -s '%%'"
