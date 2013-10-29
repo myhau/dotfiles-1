@@ -27,7 +27,16 @@ export VIM_APP_DIR=/Applications/Utils/Development
 
 export EDITOR=vim
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH:/usr/local/sbin:/sbin:/usr/libexec:/usr/bin:/Applications:/Developer/usr/bin
+export PATH=/usr/local/bin:$PATH:/usr/local/sbin:/sbin:/usr/libexec:/usr/bin:/Applications:/Developer/usr/bin
+
+platform=`uname`
+if [[ "$platform" == "Darwin" ]]; then
+    export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
+    export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
+elif [[ "$platform" == "Linux" ]]; then
+fi
+
+export PATH=$HOME/bin:$PATH
 
 export DISABLE_AUTO_TITLE=true
 
