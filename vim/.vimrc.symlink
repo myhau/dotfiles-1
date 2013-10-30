@@ -9,6 +9,7 @@ Bundle 'gmarik/vundle'
 
 "Add own bundles here
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Bundle 'bling/vim-airline'
 Bundle 'git://github.com/msanders/snipmate.vim.git'
 Bundle 'vim-scripts/Rainbow-Parenthsis-Bundle'
 Bundle 'vim-scripts/repeat.vim.git'
@@ -45,6 +46,7 @@ inoremap <S-Tab> <C-V><Tab>
 set t_Co=256
 set background=dark
 let g:badwolf_darkgutter = 1
+let g:airline_powerline_fonts = 1
 colorscheme badwolf
 "hi Normal ctermbg=none
 
