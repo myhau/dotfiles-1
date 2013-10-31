@@ -53,7 +53,7 @@ unbind -
 bind - last-window \; swap-pane -s tmux-zoom.0 \; kill-window -t tmux-zoom
 
 #Load colour theme
-source $HOME/.dotfiles/tmux/tomorrow-night.tmux
+source $HOME/.dotfiles/tmux/powerline.tmux
 
 #Load OS source files
 source $HOME/.tmux.osx.conf
