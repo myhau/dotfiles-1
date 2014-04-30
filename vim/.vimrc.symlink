@@ -34,7 +34,8 @@ Bundle 'AD7six/vim-independence'
 Bundle 'gregsexton/gitv'
 Bundle 'motemen/git-vim'
 Bundle 'groenewege/vim-less'
-Bundle 'sjl/badwolf'
+Bundle 'chriskempson/base16-vim'
+Bundle 'CSApprox'
 
 filetype plugin indent on
 "/Vundle
@@ -44,11 +45,9 @@ set expandtab
 inoremap <S-Tab> <C-V><Tab>
 
 set t_Co=256
-set background=dark
-let g:badwolf_darkgutter = 1
+set background=light
 let g:airline_powerline_fonts = 1
-colorscheme badwolf
-"hi Normal ctermbg=none
+colorscheme base16-londontube
 
 set mouse=a
 set autoindent

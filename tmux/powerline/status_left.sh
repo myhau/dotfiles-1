@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/local/bin/bash
 
 CURRENT_BG='NONE'
 SEGMENT_SEPARATOR=''
