@@ -1,7 +1,9 @@
 [core]
     editor = vim
-    excludesfile = ~/.gitignore.user
+	excludesfile = /Users/connrs/.gitignore.user
     quotepath = false
+	autocrlf = input
+	filemode = false
 [user]
     name = Paul Connolley
     email = paul.connolley@gmail.com
@@ -48,3 +50,12 @@
     file-view-vpane-position = 552
     file-view-hpane-position = 363
     show-graph = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Volumes/SourceTree/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
