@@ -47,7 +47,7 @@ inoremap <S-Tab> <C-V><Tab>
 set t_Co=256
 set background=light
 let g:airline_powerline_fonts = 1
-colorscheme base16-londontube
+colorscheme base16-default
 
 set mouse=a
 set autoindent
