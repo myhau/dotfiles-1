@@ -1,7 +1,0 @@
-source $HOME/.mutt.credentials
-#set folder="imaps://imap.gmail.com:993"
-set spoolfile="+INBOX"
-set header_cache =~/.mutt/cache/headers
-set message_cachedir =~/.mutt/cache/bodies
-set certificate_file =~/.mutt/certificates
-source $HOME/.dotfiles/mutt/xoria256m.muttrc
