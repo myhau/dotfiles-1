@@ -1,2 +1,4 @@
 fish/fish/*
 !fish/fish/config.fish
+!fish/fish/completions
+!fish/fish/functions
