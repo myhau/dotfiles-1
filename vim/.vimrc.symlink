@@ -44,6 +44,7 @@ set tabstop=4 softtabstop=4 shiftwidth=4
 set expandtab
 inoremap <S-Tab> <C-V><Tab>
 
+set shell=/usr/local/bin/bash
 set t_Co=256
 set background=light
 let g:airline_powerline_fonts = 1

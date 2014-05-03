@@ -38,7 +38,8 @@ if test -s $HOME/.dotfiles.local/pre.fish
 end
 
 for source_file in $HOME/.dotfiles/*/*.fish
-  source $source_file
+  #echo "LOADING SOURCE $source_file"
+  #source $source_file
 end
 
 if test -s $HOME/.dotfiles.local/post.fish
