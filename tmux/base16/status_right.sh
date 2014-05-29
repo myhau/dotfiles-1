@@ -26,12 +26,12 @@ prompt_end() {
 
 prompt_date() {
     when=$(date "+%d/%m/%Y")
-    prompt_segment "#9aba75" white "$when"
+    prompt_segment "#9aba75" "#ffffff" "$when"
 }
 
 prompt_clock() {
     time=$(date "+%H:%M")
-    prompt_segment "#72b9ba" white "◷ $time"
+    prompt_segment "#72b9ba" "#ffffff" "◷ $time"
 }
 
 prompt_boxname() {

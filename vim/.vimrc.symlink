@@ -1,5 +1,6 @@
 syntax on
 set synmaxcol=2048
+set shell=/usr/local/bin/zsh
 
 "Vundle
 filetype off
@@ -30,7 +31,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-git'
-Bundle 'AD7six/vim-independence'
+Bundle 'connrs/vim-independence'
 Bundle 'gregsexton/gitv'
 Bundle 'motemen/git-vim'
 Bundle 'groenewege/vim-less'
@@ -46,7 +47,7 @@ inoremap <S-Tab> <C-V><Tab>
 
 set shell=/usr/local/bin/bash
 set t_Co=256
-set background=light
+set background=dark
 let g:airline_powerline_fonts = 1
 colorscheme base16-default
 
