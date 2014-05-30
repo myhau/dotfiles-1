@@ -39,8 +39,12 @@ if test -s $HOME/.dotfiles.local/pre.fish
 end
 
 for source_file in $HOME/.dotfiles/*/*.fish
-  #echo "LOADING SOURCE $source_file"
-  #source $source_file
+  if grep "/fish/" $source_file
+    #echo "SKIPPING SOURCE $source_file"
+  else
+    #echo "LOADING SOURCE $source_file"
+    source $source_file
+  end
 end
 
 if test -s $HOME/.dotfiles.local/post.fish
