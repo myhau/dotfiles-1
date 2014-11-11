@@ -35,7 +35,7 @@ bind-key C-h clear-history
 
 ## tmux window titling for X
 set -g set-titles on
-set -g set-titles-string '[#H:#I] #W'
+set -g set-titles-string '[#h:#I] #W'
 setw -g automatic-rename off
 setw -g window-status-format ' #I #W '
 setw -g window-status-attr bold
