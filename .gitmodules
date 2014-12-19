@@ -2,9 +2,6 @@
     path = vim/.vim.symlink/bundle/vundle
     url = git://github.com/gmarik/vundle.git
     ignore = untracked
-[submodule "oh-my-fish"]
-	path = oh-my-fish
-	url = git://github.com/connrs/oh-my-fish.git
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = git@github.com:connrs/oh-my-zsh
