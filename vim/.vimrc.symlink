@@ -43,7 +43,7 @@ Bundle 'syntaxhaskell.vim'
 filetype plugin indent on
 "/Vundle
 
-set tabstop=4 softtabstop=4 shiftwidth=4
+set tabstop=2 softtabstop=2 shiftwidth=2
 set expandtab
 inoremap <S-Tab> <C-V><Tab>
 
@@ -206,7 +206,7 @@ set cpoptions+=ces$
 
 "TabToggle
 "=========
-let my_tab=4
+let my_tab=2
 execute "set shiftwidth=".my_tab
 execute "set softtabstop=".my_tab
 set expandtab
