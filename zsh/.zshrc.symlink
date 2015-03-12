@@ -17,13 +17,11 @@ export DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github gem rails3 ruby rvm zsh-syntax-highlighting)
+plugins=(git github gem rails3 ruby rvm)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-
-export VIM_APP_DIR=/Applications/Utils/Development
 
 export EDITOR=vim
 
