@@ -4,9 +4,11 @@
     quotepath = false
 	autocrlf = input
 	filemode = false
+  pager = cat
 [user]
     name = Paul Connolley
     email = paul.connolley@gmail.com
+	signingkey = 81A733B9
 [alias]
     ci = commit
     co = checkout
@@ -17,9 +19,10 @@
     ui = !/usr/bin/gity
     discard = checkout --
 	permission-reset = "!git diff -p | grep -E \"^(diff|old mode|new mode)\" | sed -e \"s/^old/NEW/;s/^new/old/;s/^NEW/new/\" | git apply"
-	printlast = "!git log -1 --name-status | vim - +hardcopy +q!"
+	printlast = "!git log --show-signature -1 --name-status | vim - +hardcopy +q!"
 	search = "!f() { git log --grep=\"$1\" -i --stat=500 --name-status; }; f"
 	project = "!f() { git init && curl -o  .gitignore --fail --show-error --silent https://raw.github.com/github/gitignore/master/$1.gitignore; }; f"
+  l = log --show-signature
 [github]
     user = connrs
     token = $(cat $HOME/.dotfiles.local/github_token)
@@ -59,3 +62,5 @@
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
+[commit]
+	gpgsign = 1
