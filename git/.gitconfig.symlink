@@ -6,8 +6,8 @@
 	filemode = false
   pager = cat
 [user]
-    name = Paul Connolley
-    email = paul.connolley@gmail.com
+	name = Paul Connolley
+	email = paul.connolley@gmail.com
 	signingkey = 81A733B9
 [alias]
     ci = commit
@@ -26,6 +26,14 @@
 [github]
     user = connrs
     token = $(cat $HOME/.dotfiles.local/github_token)
+[diff]
+  tool = vimdiff
+  guitool = gvimdiff
+[merge]
+  tool = vimdiff
+  guitool = gvimdiff
+[difftool]
+  prompt = false
 [color]
     ui = auto
 [color "branch"]
@@ -54,13 +62,17 @@
     file-view-hpane-position = 363
     show-graph = true
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	cmd = /usr/local/bin/mvimdiff -d $LOCAL $REMOTE
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Volumes/SourceTree/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /usr/local/bin/mvimdiff -d $LOCAL $REMOTE
 	trustExitCode = true
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
 [commit]
 	gpgsign = 1
+[mergetool "gvimdiff"]
+	path = /usr/local/bin/mvimdiff
+[difftool "gvimdiff"]
+	path = /usr/local/bin/mvimdiff

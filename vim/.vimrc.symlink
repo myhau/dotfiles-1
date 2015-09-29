@@ -37,7 +37,7 @@ Bundle 'motemen/git-vim'
 Bundle 'groenewege/vim-less'
 Bundle 'chriskempson/base16-vim'
 Bundle 'CSApprox'
-Bundle 'Valloric/YouCompleteMe'
+"Bundle 'Valloric/YouCompleteMe'
 Bundle 'syntaxhaskell.vim'
 
 filetype plugin indent on
@@ -242,3 +242,4 @@ if &term =~ '256color'
 	" See also http://snk.tuxfamily.org/log/vim-256color-bce.html
 	set t_ut=
 endif
+

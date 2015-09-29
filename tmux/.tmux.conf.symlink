@@ -53,6 +53,9 @@ bind + new-window -d -n tmux-zoom \; swap-pane -s tmux-zoom.0 \; select-window -
 unbind -
 bind - last-window \; swap-pane -s tmux-zoom.0 \; kill-window -t tmux-zoom
 
+# Copy to clipboard
+bind -t vi-copy y copy-pipe 'pbcopy'
+
 #Load colour theme
 source $HOME/.dotfiles/tmux/base16.tmux
 
