@@ -1,7 +1,7 @@
 #!/usr/local/bin/bash
 
 CURRENT_BG='NONE'
-SEGMENT_SEPARATOR=''
+SEGMENT_SEPARATOR=''
 
 # Begin a segment
 # Takes two arguments, background and foreground. Both can be omitted,
@@ -26,17 +26,17 @@ prompt_end() {
 
 prompt_date() {
     when=$(date "+%d/%m/%Y")
-    prompt_segment "#9aba75" "#ffffff" "$when"
+    prompt_segment "#ffd204" "#111111" "$when"
 }
 
 prompt_clock() {
     time=$(date "+%H:%M")
-    prompt_segment "#72b9ba" "#ffffff" "◷ $time"
+    prompt_segment "#009ddc" "#ffffff" "◷ $time"
 }
 
 prompt_boxname() {
     name=$(hostname)
-    prompt_segment "#dd9975" "#ffffff" "$name"
+    prompt_segment "#ee2e24" "#ffffff" "$name"
 }
 
 build_prompt() {

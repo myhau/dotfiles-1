@@ -19,18 +19,15 @@ setw -g window-status-current-format ' #I #W '
 
 ## set window notifications
 set -g visual-activity on
-set -g visual-content on
+#set -g visual-content on
 setw -g monitor-activity on
 setw -g automatic-rename off
 
 ## enable mouse
-set -g mouse-select-pane on
-set -g mouse-select-window on
 setw -g mode-keys vi
-setw -g mode-mouse on
+setw -g mouse
 
-#Key Bindings
-bind-key C-v neww 'vim --servername VIM'
+## Key Bindings
 bind-key C-h clear-history
 
 ## tmux window titling for X
@@ -39,11 +36,12 @@ set -g set-titles-string '[#h:#I] #W'
 setw -g automatic-rename off
 setw -g window-status-format ' #I #W '
 setw -g window-status-attr bold
-# starts windows at 1 not 0
+
+## starts windows at 1 not 0
 set -g base-index 1
 set-window-option -g pane-base-index 1
 
-#pane management
+##pane management
 bind-key M-j command-prompt -p "Join pane from:"  "join-pane -s '%%'"
 bind-key M-s command-prompt -p "Send pane to:"  "join-pane -t '%%'"
 bind-key M-k command-prompt -p "Kill session:" "kill-session -t '%%'"
@@ -53,13 +51,13 @@ bind + new-window -d -n tmux-zoom \; swap-pane -s tmux-zoom.0 \; select-window -
 unbind -
 bind - last-window \; swap-pane -s tmux-zoom.0 \; kill-window -t tmux-zoom
 
-# Copy to clipboard
+## Copy to clipboard
 bind -t vi-copy y copy-pipe 'pbcopy'
-
-#Load colour theme
+#
+##Load colour theme
 source $HOME/.dotfiles/tmux/base16.tmux
-
-#Load OS source files
+#
+##Load OS source files
 source $HOME/.tmux.osx.conf
-
+#
 new-session

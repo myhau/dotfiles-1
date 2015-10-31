@@ -23,21 +23,16 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'spf13/PIV'
 Bundle 'vim-scripts/matchit.zip.git'
 Bundle 'cespare/vim-bclose'
-Bundle 'phpunit'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 Bundle 'phpcodesniffer.vim'
-Bundle 'majutsushi/tagbar'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-git'
 Bundle 'connrs/vim-independence'
-Bundle 'gregsexton/gitv'
-Bundle 'motemen/git-vim'
 Bundle 'groenewege/vim-less'
 Bundle 'chriskempson/base16-vim'
 Bundle 'CSApprox'
-"Bundle 'Valloric/YouCompleteMe'
 Bundle 'syntaxhaskell.vim'
 
 filetype plugin indent on
@@ -51,7 +46,8 @@ set shell=/usr/local/bin/bash
 set t_Co=256
 set background=dark
 let g:airline_powerline_fonts = 1
-colorscheme base16-default
+let base16colorspace=256  " Access colors present in 256 colorspace"
+colorscheme base16-londontube
 
 set mouse=a
 set autoindent
@@ -96,11 +92,11 @@ set dir=~/.vim.swap//,/var/tmp//,/tmp//,.
 
 "Search
 "======
-nnoremap / /\v
-vnoremap / /\v
-set ignorecase
+"nnoremap / /\v
+"vnoremap / /\v
+"set ignorecase
 set smartcase
-set gdefault
+"set gdefault
 set incsearch
 set showmatch
 set hlsearch
