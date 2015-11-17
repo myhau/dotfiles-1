@@ -27,7 +27,7 @@ export EDITOR=vim
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH:/usr/local/sbin:/sbin:/usr/libexec:/usr/bin:/Applications:/Developer/usr/bin
 
-source $HOME/.dotfiles/zsh/base16-londontube.dark.sh
+source $HOME/.dotfiles/zsh/base16-3024.dark.sh
 
 platform=`uname`
 if [[ "$platform" == "Darwin" ]]; then
