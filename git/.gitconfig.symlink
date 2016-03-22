@@ -62,10 +62,10 @@
     file-view-hpane-position = 363
     show-graph = true
 [difftool "sourcetree"]
-	cmd = /usr/local/bin/mvimdiff -d $LOCAL $REMOTE
+	cmd = /Applications/PhpStorm.app/Contents/MacOS/phpstorm diff $LOCAL $REMOTE
 	path = 
 [mergetool "sourcetree"]
-	cmd = /usr/local/bin/mvimdiff -d $LOCAL $REMOTE
+	cmd = /Applications/PhpStorm.app/Contents/MacOS/phpstorm diff $LOCAL $REMOTE
 	trustExitCode = true
 [filter "media"]
 	clean = git-media-clean %f
