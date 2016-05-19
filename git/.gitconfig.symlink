@@ -72,6 +72,7 @@
 	smudge = git-media-smudge %f
 [commit]
 	gpgsign = 1
+	template = /Users/connrs/.stCommitMsg
 [mergetool "gvimdiff"]
 	path = /usr/local/bin/mvimdiff
 [difftool "gvimdiff"]

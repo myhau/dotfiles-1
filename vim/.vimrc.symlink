@@ -10,13 +10,12 @@ Bundle 'gmarik/vundle'
 
 "Add own bundles here
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'bling/vim-airline'
 Bundle 'git://github.com/msanders/snipmate.vim.git'
 Bundle 'vim-scripts/Rainbow-Parenthsis-Bundle'
 Bundle 'vim-scripts/repeat.vim.git'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'juvenn/mustache.vim.git'
+"Bundle 'juvenn/mustache.vim.git'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-markdown'
 Bundle 'pangloss/vim-javascript'
@@ -24,14 +23,14 @@ Bundle 'spf13/PIV'
 Bundle 'vim-scripts/matchit.zip.git'
 Bundle 'cespare/vim-bclose'
 Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-rails'
-Bundle 'phpcodesniffer.vim'
+"Bundle 'tpope/vim-rails'
+"Bundle 'phpcodesniffer.vim'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-git'
-Bundle 'connrs/vim-independence'
-Bundle 'groenewege/vim-less'
-Bundle 'chriskempson/base16-vim'
+Bundle 'sickill/vim-monokai'
+"Bundle 'tpope/vim-git'
+"Bundle 'connrs/vim-independence'
+"Bundle 'groenewege/vim-less'
 Bundle 'CSApprox'
 Bundle 'syntaxhaskell.vim'
 
@@ -42,12 +41,9 @@ set tabstop=2 softtabstop=2 shiftwidth=2
 set expandtab
 inoremap <S-Tab> <C-V><Tab>
 
-"set shell=/usr/local/bin/bash
 set t_Co=256
 set background=dark
-"let g:airline_powerline_fonts = 1
-let base16colorspace=256  " Access colors present in 256 colorspace"
-colorscheme base16-3024
+colorscheme monokai
 
 set mouse=a
 set autoindent

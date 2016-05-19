@@ -2,8 +2,6 @@
 export ZSH=$HOME/.dotfiles/oh-my-zsh
 
 # Set to the name theme to load.
-# Look in ~/.oh-my-zsh/themes/
-#export ZSH_THEME="tomorrow-night"
 export ZSH_THEME="agnoster-base16"
 
 # Set to this to use case-sensitive completion
@@ -25,9 +23,7 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR=vim
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH:/usr/local/sbin:/sbin:/usr/libexec:/usr/bin:/Applications:/Developer/usr/bin
-
-source $HOME/.dotfiles/zsh/base16-3024.dark.sh
+export PATH=$HOME/.local/bin:$HOME/bin:/usr/local/bin:$PATH:/usr/local/sbin:/sbin:/usr/libexec:/usr/bin:/Applications:/Developer/usr/bin
 
 platform=`uname`
 if [[ "$platform" == "Darwin" ]]; then
@@ -41,14 +37,3 @@ export DISABLE_AUTO_TITLE=true
 [[ -s "$HOME/.dotfiles.local/pre.zsh" ]] && source "$HOME/.dotfiles.local/pre.zsh"
 for source_file ($HOME/.dotfiles/*/*.zsh) source $source_file
 [[ -s "$HOME/.dotfiles.local/post.zsh" ]] && source "$HOME/.dotfiles.local/post.zsh"
-
-[[ -s "$HOME/.localaliases" ]] && source "$HOME/.localaliases"
-
-# for tmux: export 256color
-if [[ -n "$TMUX" ]]; then export TERM=screen-256color; fi
-export TERM=xterm-256color
-
-source $HOME/.rvm/scripts/rvm
-
-# added by travis gem
-[ -f /Users/connrs/.travis/travis.sh ] && source /Users/connrs/.travis/travis.sh
